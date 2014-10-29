@@ -1,0 +1,7 @@
+Training the classifier using Hog Features.
+
+Dataset: 5000 images
+
+To generate the Hog Features, vl_hog() is used. The implementation for feature extraction can be seen at Training/Features/Hog_Features.m
+
+For training libsvm is used. After Labelling the data as Positive/Negative Sample using tags, it is fed to the classifier. It generates the model which can be used later on for prediction.
