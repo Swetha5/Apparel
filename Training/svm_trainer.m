@@ -1,9 +1,7 @@
 clc;
 clear all;
 
-%%
-addpath('/home/swetha/Downloads/libsvm-3.19/matlab/');
-
+%% addpath('/home/swetha/Downloads/libsvm-3.19/matlab/');
 % addpath('/Pulsar1/Libraries/libsvm/matlab/');
 make
 
@@ -54,7 +52,6 @@ Im = double(Im);
 % model = svmtrain(training_label_vector, training_instance_matrix [, 'libsvm_options']);
 Model = svmtrain(Label, Im,'-b 1');
 [predict_label, accuracy, dec_values] = svmpredict(Label, Im, Model,'-b 1');
-
 % save('Total_data_1men_pos.mat','Im');
 % save('Label_1men_pos.mat','Label');
 % save('Model_1men_pos.mat','Model');
